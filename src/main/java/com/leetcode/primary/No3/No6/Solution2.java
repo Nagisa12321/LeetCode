@@ -1,8 +1,8 @@
 package com.leetcode.primary.No3.No6;
 
 /************************************************
- * @description 快慢指针
- * 如果链表为环形的话，那么快指针一定会追上慢指针！
+ * @description 蹇參鎸囬拡
+ * 濡傛灉閾捐〃涓虹幆褰㈢殑璇濓紝閭ｄ箞蹇寚閽堜竴瀹氫細杩戒笂鎱㈡寚閽堬紒
  * @author jtchen
  * @date 2020/11/23 13:34
  * @version 1.0

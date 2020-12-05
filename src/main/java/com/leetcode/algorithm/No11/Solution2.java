@@ -1,7 +1,7 @@
 package com.leetcode.algorithm.No11;
 
 /**
- * 双指针大法：每次都移动最小的那个指针
+ * 鍙屾寚閽堝ぇ娉曪細姣忔閮界Щ鍔ㄦ渶灏忕殑閭ｄ釜鎸囬拡
  */
 public class Solution2 {
     public int maxArea(int[] height) {

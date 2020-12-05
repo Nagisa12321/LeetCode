@@ -1,32 +1,32 @@
 package com.leetcode.algorithm.No31;
 
 /**
- * @×ÖµäĞòËã·¨ ÏÈÕÒ³ö¡°ÄæĞò²¿·Ö¡±
- * ÔÚÄæĞò²¿·ÖÖĞÕÒ³ö¸ÕºÃ´óÓÚÄæĞò²¿·ÖÇ°µÄÊı×Ö²¢×÷½»»»
- * ÅÅĞòÄæĞò²¿·Ö
+ * @å­—å…¸åºç®—æ³• å…ˆæ‰¾å‡ºâ€œé€†åºéƒ¨åˆ†â€
+ * åœ¨é€†åºéƒ¨åˆ†ä¸­æ‰¾å‡ºåˆšå¥½å¤§äºé€†åºéƒ¨åˆ†å‰çš„æ•°å­—å¹¶ä½œäº¤æ¢
+ * æ’åºé€†åºéƒ¨åˆ†
  */
 public class Solution2 {
     public void nextPermutation(int[] nums) {
-        //¼ÇÂ¼ÄæĞò²¿·Ö¿ªÊ¼ÏÂ±ê
+        //è®°å½•é€†åºéƒ¨åˆ†å¼€å§‹ä¸‹æ ‡
         int theIndex = nums.length - 1, theLeftNum;
-        //ÕÒ³öÄæĞò¿ªÊ¼Ö®ÏÂ±êtheIndex
+        //æ‰¾å‡ºé€†åºå¼€å§‹ä¹‹ä¸‹æ ‡theIndex
         for (int i = nums.length - 1; i >= 0; --i)
             if (nums[i] >= nums[theIndex]) theIndex = i;
             else break;
-        //ÈôÆğÊ¼Î»Îª0Ôò·­×ªÊı×é
+        //è‹¥èµ·å§‹ä½ä¸º0åˆ™ç¿»è½¬æ•°ç»„
         if (theIndex == 0) {
             reserve(nums, 0, nums.length - 1);
         } else {
-            //·­×ªÊı×éÖ®Ç°µÄÊı×Ö
+            //ç¿»è½¬æ•°ç»„ä¹‹å‰çš„æ•°å­—
             theLeftNum = nums[theIndex - 1];
-            //¸ÕºÃ´óÓÚtheLeftNumµÄÊı×Ö
+            //åˆšå¥½å¤§äºtheLeftNumçš„æ•°å­—
             int theIndex2 = theIndex;
             for (int i = theIndex; i < nums.length; ++i)
                 if (nums[i] > theLeftNum) theIndex2 = i;
-            //½»»»theLeftNumºÍnums[theIndex2]
+            //äº¤æ¢theLeftNumå’Œnums[theIndex2]
             nums[theIndex - 1] = nums[theIndex2];
             nums[theIndex2] = theLeftNum;
-            //ÄæĞòÅÅĞòºóÃæÊı×Ö
+            //é€†åºæ’åºåé¢æ•°å­—
             reserve(nums, theIndex, nums.length - 1);
         }
     }

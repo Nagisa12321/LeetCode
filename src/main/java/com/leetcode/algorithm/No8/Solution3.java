@@ -5,10 +5,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * ÓÃÕıÔò±í´ïÊ½µÄ·½·¨À´Íê³É
+ * ç”¨æ­£åˆ™è¡¨è¾¾å¼çš„æ–¹æ³•æ¥å®Œæˆ
  *
- * @ÕıÔò±í´ïÊ½£º ÏêÇé²Î¿¼ https://www.runoob.com/java/java-regular-expressions.html
- ********* ¸Ã·½·¨»¨·ÑÊ±¼ä¹ı³¤********
+ * @æ­£åˆ™è¡¨è¾¾å¼ï¼š è¯¦æƒ…å‚è€ƒ https://www.runoob.com/java/java-regular-expressions.html
+ ********* è¯¥æ–¹æ³•èŠ±è´¹æ—¶é—´è¿‡é•¿********
  */
 public class Solution3 {
     final int INT_MAX = (int) (Math.pow(2, 31) - 1);

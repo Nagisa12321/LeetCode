@@ -2,6 +2,25 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java/11/src/main/java/Solution.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No1081/Solution.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No1081/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No11/Solution.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No11/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No234/Solution.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No31/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No44/Solution.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No739/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No8/Automaton.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/algorithm/No8/Solution3.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/offer/No45/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/offer/No9/CQueue2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/primary/No1/No2/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/primary/No1/No6/Solution3.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/primary/No2/No3/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/primary/No3/No6/Solution.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/primary/No3/No6/Solution2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/primary/No4/No3/Solution.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/leetcode/primary/No4/No3/Solution2.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/primary_3_06/src/main/java/Solution.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>

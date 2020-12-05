@@ -1,7 +1,7 @@
 package com.leetcode.primary.No4.No3;
 
 /************************************************
- * @description
+ * @description 递归方法
  * @author jtchen
  * @date 2020/11/26 11:48
  * @version 1.0
@@ -13,8 +13,8 @@ public class Solution {
     }
     public boolean isSymmetric(TreeNode theLeft, TreeNode theRight) {
         if(theLeft == null && theRight == null) return true;
-        if(theLeft == null && theRight != null) return false;
-        if(theLeft != null && theRight == null) return false;
+        if(theLeft == null) return false;
+        if(theRight == null) return false;
         if(theRight.val != theLeft.val) return false;
         return (isSymmetric(theLeft.left,theRight.right))
                 && (isSymmetric(theLeft.right,theRight.left));

@@ -1,7 +1,7 @@
 package com.leetcode.offer.No45;
 
 /**
- * @快速自定义排序
+ * @蹇�熻嚜瀹氫箟鎺掑簭
  */
 public class Solution2 {
     public String minNumber(int[] nums) {
@@ -20,7 +20,7 @@ public class Solution2 {
         }
     }
 
-    //?复制上一题的比较: 若i可在num后面，则返回ture
+    //?澶嶅埗涓婁竴棰樼殑姣旇緝: 鑻鍙湪num鍚庨潰锛屽垯杩斿洖ture
     private boolean compare(int num, int i) {
         return (Long.parseLong(num + "" + i) <= Long.parseLong(i + "" + num));
     }

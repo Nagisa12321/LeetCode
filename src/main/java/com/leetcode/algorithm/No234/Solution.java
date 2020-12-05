@@ -3,8 +3,8 @@ package com.leetcode.algorithm.No234;
 import java.util.Stack;
 
 /**
- * @Ë¼Â·£º ½«Á´±í±éÀúÒ»´Î£¬²¢´æ´¢ÔÚÕ»ÖĞ£¬Ë³±ã¼ÆËãÁ´±í³¤¶È
- *        È»ºó±éÀúÒ»°ëµÄÁ´±í£¬Èô³öÏÖ²»Í¬Ö±½ÓÊä³öfalse¼´¿É
+ * @æ€è·¯ï¼š å°†é“¾è¡¨éå†ä¸€æ¬¡ï¼Œå¹¶å­˜å‚¨åœ¨æ ˆä¸­ï¼Œé¡ºä¾¿è®¡ç®—é“¾è¡¨é•¿åº¦
+ *        ç„¶åéå†ä¸€åŠçš„é“¾è¡¨ï¼Œè‹¥å‡ºç°ä¸åŒç›´æ¥è¾“å‡ºfalseå³å¯
  */
 public class Solution {
     public boolean isPalindrome(ListNode head) {

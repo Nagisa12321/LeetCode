@@ -1,9 +1,9 @@
 package com.leetcode.algorithm.No44;
 
-//¸Ã·½·¨¿ÉÐÐ£¬È»¶øForÑ­»·Ì«¶à£¬³¬³öÊ±¼äÏÞÖÆ
+//è¯¥æ–¹æ³•å¯è¡Œï¼Œç„¶è€ŒForå¾ªçŽ¯å¤ªå¤šï¼Œè¶…å‡ºæ—¶é—´é™åˆ¶
 public class Solution {
 	public int trap(int[] height) {
-		// ÕÒ³ö×î´ó¸ß¶È
+		// æ‰¾å‡ºæœ€å¤§é«˜åº¦
 		int round = 0;
 		for (int k : height) {
 			if (k > round)
@@ -13,8 +13,8 @@ public class Solution {
 		int sumOfWater = 0;
 		for (int j = 0; j < round; j++) {
 
-			// Ç°ºó±éÀúÊý×é£¬ÅÅ³ýÊýÖµÐ¡ÓÚ»òµÈÓÚ0
-			// ÇÒÈôÊÇÐ¡ÓÚ0£¬sum+=¾ø¶ÔÖµ
+			// å‰åŽéåŽ†æ•°ç»„ï¼ŒæŽ’é™¤æ•°å€¼å°äºŽæˆ–ç­‰äºŽ0
+			// ä¸”è‹¥æ˜¯å°äºŽ0ï¼Œsum+=ç»å¯¹å€¼
 			for (left = 0; left < height.length; left++) {
 				if (height[left] <= 0)
 					sumOfWater += -height[left];
@@ -35,7 +35,7 @@ public class Solution {
 			}
 			height = temp;
 
-			// Êý×é×ÜÌå¼õÒ»
+			// æ•°ç»„æ€»ä½“å‡ä¸€
 			for (int i = 0; i < height.length; i++) {
 				--height[i];
 			}

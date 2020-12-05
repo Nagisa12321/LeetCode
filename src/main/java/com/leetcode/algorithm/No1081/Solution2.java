@@ -3,12 +3,12 @@ package com.leetcode.algorithm.No1081;
 import java.util.Stack;
 
 /**
- * @Stack "��һ�ۺ���"������ջ
- * ��ջ����ֱ����ջ
- * ����ջ��Ԫ�ش���ֱ����ջ
- * ����ջ��Ԫ��С���򡰿�һ�ۡ�������
- * �����֣����ջ���ٿ���ջ������
- * ��û���֣���ֱ�ӳ�ջ
+ * @Stack "看一眼后续"，在入栈
+ * 若栈空则直接入栈
+ * 若比栈顶元素大，则直接入栈
+ * 若比栈顶元素小，则“看一眼”后续串
+ * 若出现，则出栈，再看看栈顶……
+ * 若没出现，则直接出栈
  */
 public class Solution2 {
     public String smallestSubsequence(String s) {
