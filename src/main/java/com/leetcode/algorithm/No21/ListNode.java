@@ -1,18 +1,30 @@
 package com.leetcode.algorithm.No21;
 
 public class ListNode {
-    int val;
-    ListNode next;
+    public int val;
+    public ListNode next;
 
-    ListNode() {
+    public ListNode() {
     }
 
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    public String toString() {
+        StringBuilder builder = new StringBuilder("[");
+        ListNode node = this;
+        while (node != null) {
+            if (node.next != null)
+            builder.append(node.val).append(", ");
+            else builder.append(node.val).append("]");
+            node = node.next;
+        }
+        return builder.toString();
     }
 }
