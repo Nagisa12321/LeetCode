@@ -1,4 +1,4 @@
-package com.leetcode.offer.No57;
+package com.leetcode.offer.No57.twosum;
 
 /**
  * @author jtchen
