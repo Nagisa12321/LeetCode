@@ -1,0 +1,36 @@
+class Solution {
+    private static final int MULTIPLE = 731;
+
+    public boolean checkInclusion(String s1, String s2) {
+        char[] chs_s1 = s1.toCharArray();
+        char[] chs_s2 = s2.toCharArray();
+
+        int len = chs_s1.length;
+        // s1的hashCode
+        int hashCode = 0;
+        for (char ch : chs_s1) {
+            hashCode *= MULTIPLE;
+            hashCode += ch;
+        }
+
+        // 计算初始窗口的code值
+        int code = 0;
+        for (int i = 0; i < len; i++) {
+            code *= MULTIPLE;
+            code += chs_s2[i];
+        }
+
+        for (int i = 0; i <= chs_s2.length - len; i++) {
+            if (i > 0) {
+                code -= chs_s2[i - 1] * Math.pow(MULTIPLE, len - 1);
+                code *= MULTIPLE;
+                code += chs_s2[i + len - 1];
+            }
+            if (code == hashCode) return true;
+        }
+        return false;
+    }
+}
+
+// 仅包含s1本身
+/* Rolling Hash */

@@ -1,5 +1,6 @@
 package com.leetcode.offer.No14;
 
+import com.leetcode.offer.No14.No1.Solution;
 import org.junit.Test;
 
 public class SolutionTest {

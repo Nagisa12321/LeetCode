@@ -1,4 +1,4 @@
-package com.leetcode.offer.No14;
+package com.leetcode.offer.No14.No1;
 
 /**
  * @author jtchen

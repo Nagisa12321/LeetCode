@@ -1,7 +1,6 @@
 package com.leetcode.offer.No41;
 
-import java.util.ArrayList;
-import java.util.TreeSet;
+import java.util.PriorityQueue;
 
 /**
  * @author jtchen
@@ -9,33 +8,38 @@ import java.util.TreeSet;
  * @date 2021/2/14 22:47
  */
 public class MedianFinder {
+	private PriorityQueue<Integer> leftQueue;
+	private PriorityQueue<Integer> rightQueue;
 
-    TreeSet<Integer> set;
-    boolean isOdd;
+	/**
+	 * initialize your data structure here.
+	 */
+	public MedianFinder() {
+		this.leftQueue = new PriorityQueue<>((x, y) -> y - x);
+		this.rightQueue = new PriorityQueue<>();
+	}
 
+	public void addNum(int num) {
+		int left = leftQueue.peek() == null ? 0 : leftQueue.peek();
+		int right = rightQueue.peek() == null ? 0 : rightQueue.peek();
 
-    /**
-     * initialize your data structure here.
-     */
-    public MedianFinder() {
-        set = new TreeSet<>();
-        isOdd = false;
-    }
+		int mid = (left + right) / 2;
+		if (num <= mid) leftQueue.offer(num);
+		else rightQueue.offer(num);
+	}
 
-    public void addNum(int num) {
-        if (set.add(num))
-            isOdd = !isOdd;
-    }
-
-    public double findMedian() {
-        ArrayList<Integer> list = new ArrayList<>(set);
-        int len = set.size();
-        if (isOdd) {
-            return (double) list.get(len / 2);
-        } else {
-            return ((double) list.get(len / 2) + (double) list.get(len / 2 + 1)) / 2;
-        }
-    }
+	public double findMedian() {
+		int tmp = leftQueue.size() - rightQueue.size();
+		if (tmp > 0) {
+			for (int i = 0; i < tmp / 2; i++)
+				rightQueue.offer(leftQueue.poll());
+		} else if (tmp < 0)
+            for (int i = 0; i < -tmp / 2; i++)
+                leftQueue.offer(rightQueue.poll());
+        if (leftQueue.size() == rightQueue.size()) { return (double) (leftQueue.peek() + rightQueue.peek()) / 2; }
+        else if (leftQueue.size() > rightQueue.size()) { return leftQueue.peek(); }
+        else { return rightQueue.peek(); }
+	}
 }
 
 /**

@@ -1,5 +1,7 @@
 package com.leetcode.struct;
 
+import java.util.StringJoiner;
+
 // Definition for singly-linked list.
 public class ListNode {
     public int val;
@@ -15,5 +17,10 @@ public class ListNode {
     ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(val);
     }
 }
